@@ -1,0 +1,21 @@
+•	The training data was downloaded
+•	CLasse variable was predicted using different techniques like glm, rpart and randomForest
+•	randomForest had the highest accuracy so it was used as the method for the model technique
+•	Using Varimp function variable importance was found and the least important variables were dropped. Based on which top 20 variables were selected.
+The model had the below summary -
+1.	Type of random forest: classification
+2.	Number of trees: 100
+3.	No. of variables tried at each split: 4
+4.	OOB estimate of  error rate: 0.09%
+Confusion matrix:
+     A    B    C    D    E  class.error
+A 4460    0    0    0    0 0.0000000000
+B    2 3027    0    0    0 0.0006602839
+C    0    4 2766    0    0 0.0014440433
+D    0    0    3 2600    1 0.0015360983
+E    0    0    0    4 2891 0.0013816926
+
+Out of sample error was tested using K fold classification
+With k = 5,
+Out of sample error was very minimal. Hence the model was fine.
+Model was used on testing data and all 20 values were predicted correctly
